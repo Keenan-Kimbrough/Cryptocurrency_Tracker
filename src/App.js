@@ -38,7 +38,7 @@ console.log(coins)
 
 const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
   return (
-    <div className='container'>
+    <div className='container col-md'>
     <div className="coin-app col-md">
      <div className='coin-search'>
        <h1 className='coin-text'> Search a currency</h1>
