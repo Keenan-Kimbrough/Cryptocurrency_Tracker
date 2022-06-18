@@ -1,8 +1,11 @@
 import React from "react";
-import './coin.css'
+import '../../coin.css';
 
 function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
+
+  console.log(`this is volume ${volume}`)
   return (
+  <div data-testid='coin'>
     <div className="coin-container">
       <div className="coin-row">
         <div className="coin">
@@ -12,13 +15,16 @@ function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
         </div>
         <div className="coin-data">
           <p className="coin-price"> ${price}</p>
-          <p className="coin-volume"> ${volume.toLocaleString()}</p>
-          {priceChange < 0 ? (<p className='coin-percent red'>{priceChange.toFixed(2)}</p>): (<p>{priceChange.toFixed(2)}%</p>)}
+          <p className="coin-volume"> ${volume}</p>
+          {priceChange < 0 ? (<p className='coin-percent red'>{priceChange}</p>): (<p>{priceChange}</p>)}
+          
           <p className='coin-marketcap'>
-              mkt Cap: ${marketCap.toLocaleString()}
+              mkt Cap: ${marketCap}
+              
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
