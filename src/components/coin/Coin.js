@@ -5,7 +5,7 @@ function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
 
   console.log(`this is volume ${volume}`)
   return (
-  <div data-testid='coin'>
+  <div data-testid='coin col-md'>
     <div className="coin-container">
       <div className="coin-row">
         <div className="coin">
