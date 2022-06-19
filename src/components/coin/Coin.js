@@ -2,8 +2,10 @@ import React from "react";
 import '../../coin.css';
 
 function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
-
-  console.log(`this is volume ${volume}`)
+let volume1= Number(volume)
+let newmaa = Number(marketCap)
+let newpra = Number(priceChange) 
+  console.log(`this is volume ${volume1}`)
   return (
   <div data-testid='coin1 col-md col-sm col-xs'>
     <div className="coin-container col-md col-sm col-xs">
@@ -15,11 +17,11 @@ function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
         </div>
         <div className="coin-data col-md col-xs">
           <p className="coin-price col-md col-xs"> ${price}</p>
-          <p className="coin-volume col-md col-xs"> ${volume}</p>
-          {priceChange < 0 ? (<p className='coin-percent red col-md col-xs'>{priceChange}</p>): (<p>{priceChange}</p>)}
+          <p className="coin-volume col-md col-xs"> ${volume1.toFixed(2)}</p>
+          {priceChange.toFixed(2) < 0 ? (<p className='coin-percent red col-md col-xs'>{newpra.toFixed(2)}</p>): (<p>{priceChange}</p>)}
           
           <p className='coin-marketcap col-md col-xs'>
-              mkt Cap: ${marketCap}
+              mkt Cap: ${newmaa.toFixed(2)}
               
           </p>
         </div>
