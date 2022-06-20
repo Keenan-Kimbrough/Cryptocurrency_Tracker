@@ -38,13 +38,13 @@ console.log(coins)
 
 const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
   return (
-    <div className='container col-md col-sm col-xs'>
-    <div className="coin-app col-md col-xs">
-     <div className='coin-search col-md col-xs'>
-       <h1 className='coin-text col-md col-xs'> Search a currency</h1>
+    <div className='container '>
+    <div className="coin-app">
+     <div className='coin-search '>
+       <h1 className='coin-text '> Search a currency</h1>
        <form>
 
-         <input type='text' placeholder='search' className='coin-input col-md col-xs' onChange={handleChange} />
+         <input type='text' placeholder='search' className='coin-input' onChange={handleChange} />
    
        </form>
      </div>
