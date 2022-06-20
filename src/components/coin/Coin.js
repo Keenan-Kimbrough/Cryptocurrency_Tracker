@@ -3,7 +3,6 @@ import '../../coin.css';
 
 function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
 
-  console.log(`this is volume ${volume}`)
   return (
   <div data-testid='coin1 '>
     <div className="coin-container">
