@@ -16,7 +16,7 @@ function Coin({name,image,symbol,price,volume, priceChange, marketCap}) {
         <div className="coin-data ">
           <p className="coin-price "> Price: ${price}</p>
           <p className="coin-volume "> Volume: ${volume.toFixed(2)}</p>
-           {priceChange.toFixed(2) < 0 ? (<p className='coin-percent red col-md col-xs'>Price Change: {priceChange.toFixed(2)}%</p>): (<p className='green'> Price Change: {priceChange}%</p>)}
+           {priceChange.toFixed(2) < 0 ? (<p className='coin-percent red '>Price Change: {priceChange.toFixed(2)}%</p>): (<p className=' coin-percent green'> Price Change: {priceChange}%</p>)}
           
           <p className='coin-marketcap col-md col-xs'>
               mkt Cap: ${marketCap.toFixed(2)}
