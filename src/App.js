@@ -38,7 +38,7 @@ console.log(coins)
 
 const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
   return (
-    <div className='container '>
+    <div className='container'>
     <div className="coin-app">
      <div className='coin-search '>
        <h1 className='coin-text '> Search a currency</h1>
@@ -47,6 +47,7 @@ const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(sear
          <input type='text' placeholder='search' className='coin-input' onChange={handleChange} />
    
        </form>
+     </div>
      </div>
      {filteredCoins.map(coin=> {
        return (
@@ -63,7 +64,7 @@ const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(sear
 
        )
      })}
-    </div>
+   
     </div>
   );
 }

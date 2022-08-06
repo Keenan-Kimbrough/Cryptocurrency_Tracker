@@ -7,6 +7,9 @@
   color: #fff
 }
 
+.container {
+  width: 100%
+}
 .coin-app {
   display: flex;
   flex-direction:column;
@@ -43,4 +46,18 @@
 }
 .coin-input::placeholder {
   color:#e2e2e2
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+      width: 86%
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      width: 90%
+  }
+ 
 }
